@@ -5,7 +5,7 @@ The feature can be used with APIs developed in .net core.
 
 <b>Steps For API developers :</b>
 <ol>
-  <li>Add <NUGET_REPO_HERE> as package source in nuget package manager</li>
+  <li>Add [NUGET_REPO_HERE] as package source in nuget package manager</li>
   <li>install FS_Glossary from above added package source</li>
   <li>In Configure method in Startup file <b>add the middleware</b> using the line - <pre>applicationbuilder.UseGlossary()</pre></li>
   <li>To add option to selectively add header to enable glossary <b>add following operation filter</b> while adding swaggergen in ConfigureServices <pre>swaggerGen.OperationFilter&lt;AddGlossaryHeaderFilter&gt;();</pre></li>
